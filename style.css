@@ -1,0 +1,115 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(bg.jpg);
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.596);
+  padding: 1.2rem;
+  border-radius: 8px;
+  width: 300px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.operator {
+  width: 50px;
+  height: 50px;
+  font-size: 23px;
+  margin: 10px 12px;
+  border-radius: 5px;
+  border: 0;
+  background-color: rgb(104, 104, 104);
+  color: white;
+  box-shadow: 5px 5px 20px rgba(75, 75, 75, 0.418), -5px -5px 20px rgba(75, 75, 75, 0.418), inset 5px 5px 15px rgba(32, 32, 32, 0.5), inset -5px -5px 15px rgba(32, 32, 32, 0.5);
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.operator:active {
+  background-color: orange;
+  color: white;
+  box-shadow: inset 5px 5px 15px rgba(243, 112, 4, 0.918), inset -5px -5px 15px rgba(243, 112, 4, 0.918);
+  transform: scale(0.95);
+}
+
+.fun {
+  color: orange;
+}
+
+.equal {
+  background-color: rgb(179, 179, 179);
+  box-shadow: inset 5px 5px 15px rgba(102, 102, 102, 0.534), inset -5px -5px 15px rgba(102, 102, 102, 0.534);
+}
+
+.clear {
+  font-size: 18px;
+}
+
+.alldel {
+  color: red;
+}
+
+.input {
+  margin: 12px 0;
+}
+.input .result {
+  width: 100%;
+  height: 70px;
+  background-color: rgba(104, 104, 104, 0.1);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding: 0 10px;
+  text-align: right;
+}
+.input .user-input {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: right;
+}
+
+@media (max-width: 400px) {
+  .container {
+    width: 250px;
+  }
+  .operator {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+  .input input {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 320px) {
+  .container {
+    width: 220px;
+  }
+  .operator {
+    width: 35px;
+    height: 35px;
+    font-size: 16px;
+  }
+  .result {
+    font-size: 1.3rem;
+  }
+}/*# sourceMappingURL=style.css.map */
